@@ -1,18 +1,17 @@
 @font-face {
   font-family: 'poppins-regular';
-  src: url('../fonts/poppins-webfont/poppins-regular-webfont.woff')
+  src: url('./fonts/poppins-webfont/poppins-regular-webfont.woff')
       format('woff'),
-    url('../fonts/poppins-webfont/poppins-regular-webfont.woff2')
-      format('woff2');
+    url('./fonts/poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'poppins-semibold';
-  src: url('../fonts/poppins-webfont/poppins-semibld-webfont.woff')
+  src: url('./fonts/poppins-webfont/poppins-semibld-webfont.woff')
       format('woff'),
-    url('../fonts/poppins-webfont/poppins-semibold-webfont.woff2')
+    url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
       format('woff2');
   font-weight: 600;
   font-style: normal;
@@ -20,9 +19,9 @@
 
 @font-face {
   font-family: 'opensans';
-  src: url('../fonts/opensans-webfont/opensans-regular-webfont.woff')
+  src: url('./fonts/opensans-webfont/opensans-regular-webfont.woff')
       format('woff'),
-    url('../fonts/opensans-webfont/opensans-regular-webfont.woff2')
+    url('./fonts/opensans-webfont/opensans-regular-webfont.woff2')
       format('woff2');
   font-weight: 400;
   font-style: normal;
