@@ -39,6 +39,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: 'opensans', sans-serif;
+  color: white;
 }
 
 h1 {
@@ -50,12 +51,26 @@ h3 {
   font-family: 'poppins-regular', sans-serif;
 }
 
+button:link,
+button:visited {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+}
+
+button:active,
+button:hover,
+button:focus {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+]
+
 /* Mobile Styles */
 body {
   display: grid;
   max-inline-size: 375px;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   background-color: hsl(257, 40%, 49%);
   background-image: url('./images/bg-mobile.svg');
   background-size: cover;
@@ -64,23 +79,29 @@ body {
   justify-content: center;
 }
 
-h1 {
+header {
   grid-column: 1 / 6;
   grid-row: 1 / 2;
+  align-content: center;
+}
+
+h1 {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
   padding: 8% auto;
   text-align: center;
 }
 
 p {
   grid-column: 1 / 6;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   padding: 10% auto;
   text-align: center;
 }
 
 button {
   grid-column: 2 / 5;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   max-inline-size: 85%;
   block-size: 2rem;
   border-radius: 15px;
@@ -88,5 +109,5 @@ button {
 
 footer {
   grid-column: 1 / 5;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
 }
