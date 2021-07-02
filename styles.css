@@ -42,6 +42,10 @@ body {
   color: white;
 }
 
+header > img {
+  object-fit: contain;
+}
+
 h1 {
   font-family: 'poppins-semibold', sans-serif;
 }
