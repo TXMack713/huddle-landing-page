@@ -44,6 +44,7 @@ body {
 
 header > img {
   object-fit: contain;
+  max-inline-size: 100%;
 }
 
 h1 {
