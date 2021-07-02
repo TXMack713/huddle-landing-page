@@ -38,6 +38,16 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-family: 'opensans', sans-serif;
+}
+
+h1 {
+  font-family: 'poppins-semibold', sans-serif;
+}
+
+h2,
+h3 {
+  font-family: 'poppins-regular', sans-serif;
 }
 
 /* Mobile Styles */
