@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'poppins-regular';
+  src: url('./poppins-webfont/poppins-regular-webfont.woff') format('woff'),
+    url('./poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url('./poppins-webfont/poppins-semibld-webfont.woff') format('woff'),
+    url('./poppins-webfont/poppins-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url('./opensans-webfont/opensans-regular-webfont.woff') format('woff'),
+    url('./opensans-webfont/opensans-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +38,7 @@ body {
 /* Mobile Styles */
 body {
   display: grid;
+  max-inline-size: 375px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   background-color: hsl(257, 40%, 49%);
