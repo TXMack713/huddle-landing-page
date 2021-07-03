@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'poppins-semibold';
-  src: url('./fonts/poppins-webfont/poppins-semibld-webfont.woff')
+  src: url('./fonts/poppins-webfont/poppins-semibold-webfont.woff')
       format('woff'),
     url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
       format('woff2');
@@ -68,14 +68,14 @@ button:focus {
   background-color: hsl(300, 69%, 71%);
   color: white;
 }
-]
+
 
 /* Mobile Styles */
 body {
   display: grid;
   max-inline-size: 375px;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
   background-color: hsl(257, 40%, 49%);
   background-image: url('./images/bg-mobile.svg');
   background-size: cover;
@@ -90,29 +90,45 @@ header {
   align-content: center;
 }
 
+.landing {
+  grid-area: 2 / 2 / 3 / 6;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  text-align: center;
+}
+/*
 h1 {
   grid-column: 1 / 6;
   grid-row: 2 / 3;
-  padding: 8% auto;
+  padding: 8% 0;
   text-align: center;
 }
 
 p {
   grid-column: 1 / 6;
   grid-row: 3 / 4;
-  padding: 10% auto;
+  padding: 10% 0;
   text-align: center;
-}
+}*/
 
 button {
   grid-column: 2 / 5;
   grid-row: 4 / 5;
-  max-inline-size: 85%;
+  max-inline-size: 100%;
   block-size: 2rem;
   border-radius: 15px;
 }
 
+.icons {
+  grid-area: 5 / 2 / 6 / 5;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 footer {
-  grid-column: 1 / 5;
-  grid-row: 5 / 6;
+  grid-area: 6 / 1 / 7 / 5;
 }
