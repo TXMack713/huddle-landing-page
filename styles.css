@@ -98,6 +98,10 @@ body {
   grid-area: 3 / 1 / 6 / 8;
   text-align: center;
   padding: 0 15%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
 }
 
 /* h2 {
@@ -118,7 +122,7 @@ button {
   block-size: 2.5rem;
   border-radius: 25px;
   text-align: center;
-} 
+}
 
 .icons {
   grid-area: 6 / 3 / 7 / 6;
