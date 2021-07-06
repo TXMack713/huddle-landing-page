@@ -41,6 +41,7 @@ body {
   -webkit-box-sizing: border-box;
   font-family: 'opensans', sans-serif;
   color: white;
+  font-size: 15px;
 }
 
 /* header > img {
@@ -73,7 +74,7 @@ button:focus {
 /* Mobile Styles */
 body {
   display: grid;
-  max-inline-size: 375px;
+  inline-size: 25rem; /* 375px */
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
   background-color: hsl(257, 40%, 49%);
@@ -85,12 +86,6 @@ body {
   word-spacing: 1.0625;
   /* letter-spacing: 1.0625; */
 }
-
-/* header {
-  grid-column: 1 / 8;
-  grid-row: 1 / 2;
-  align-content: center;
-} */
 
 #logo {
   grid-area: 1 / 1 / 2 / 8;
