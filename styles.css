@@ -76,7 +76,7 @@ body {
   background-image: url('./images/bg-mobile.svg');
   background-size: cover;
   margin: auto;
-  padding: 5%;
+  padding: 5% 10%;
   justify-content: center;
   word-spacing: 1.0625;
   line-height: 1.5;
@@ -94,7 +94,13 @@ body {
   align-self: center;
 }
 
-h2 {
+.landing {
+  grid-area: 3 / 1 / 6 / 8;
+  text-align: center;
+  padding: 0 15%;
+}
+
+/* h2 {
   grid-area: 3 / 1 / 4 / 8;
   text-align: center;
   padding: 0 10%;
@@ -104,7 +110,7 @@ p {
   grid-area: 4 / 1 / 5 / 8;
   text-align: center;
   padding: 0 15%;
-}
+}*/
 
 button {
   margin: auto;
@@ -112,8 +118,7 @@ button {
   block-size: 2.5rem;
   border-radius: 25px;
   text-align: center;
-  grid-area: 5 / 2 / 6 / 7;
-}
+} 
 
 .icons {
   grid-area: 6 / 3 / 7 / 6;
