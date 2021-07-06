@@ -96,7 +96,7 @@ body {
 }
 
 .landing {
-  grid-area: 3 / 1 / 6 / 8;
+  grid-area: 3 / 1 / 5 / 8;
   text-align: center;
   padding: 0 6.25%;
   display: flex;
@@ -126,7 +126,7 @@ button {
 }
 
 .icons {
-  grid-area: 6 / 3 / 7 / 6;
+  grid-area: 5 / 3 / 6 / 6;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -134,7 +134,7 @@ button {
 }
 
 footer {
-  grid-area: 7 / 1 / 8 / 8;
+  grid-area: 6 / 1 / 7 / 8;
 }
 footer a {
   text-decoration: none;
