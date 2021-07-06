@@ -74,7 +74,7 @@ body {
   grid-template-rows: 0.5fr repeat(5, 0.75fr) 0.5fr;
   background-color: hsl(257, 40%, 49%);
   background-image: url('./images/bg-mobile.svg');
-  background-size: contain;
+  background-size: cover;
   margin: auto;
   padding: 5%;
   justify-content: center;
