@@ -84,7 +84,7 @@ footer a {
 }
 
 /* Mobile Layout */
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 50rem) {
   body {
     display: grid;
     max-inline-size: 50rem; /* 750px */
