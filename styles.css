@@ -96,7 +96,6 @@ body {
   background-position: top;
   padding: 5% 10%;
   margin: 0 auto;
-  /* justify-items: center; */
   word-spacing: 1.0625;
   line-height: 1.5;
 }
@@ -158,5 +157,18 @@ footer {
 /* Desktop Layout */
 @media all and (min-width: 33.333em) {
   body {
+    display: grid;
+    max-inline-size: 96rem; /* 1440px */
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.5fr 1fr repeat(3, 0.75fr) 0.5fr;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-desktop.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5% 10%;
+    margin: 0 auto;
+    word-spacing: 1.0625;
+    line-height: 1.5;
   }
 }
