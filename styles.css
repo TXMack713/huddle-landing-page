@@ -149,7 +149,7 @@ footer a {
   body {
     display: grid;
     max-inline-size: 96rem; /* 1440px */
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
@@ -169,18 +169,18 @@ footer a {
   }
 
   #layouts {
-    grid-area: 2 / 1 / 6 / 4;
+    grid-area: 2 / 1 / 6 / 6;
     inline-size: 100%;
     align-self: center;
   }
 
   .landing {
-    grid-area: 3 / 4 / 5 / 8;
+    grid-area: 3 / 6 / 5 / 9;
     text-align: left;
     padding: 0 6.25%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: stretch;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -190,10 +190,11 @@ footer a {
     block-size: 2.75rem;
     border-radius: 25px;
     text-align: center;
+    justify-self: flex-start;
   }
 
   .icons {
-    grid-area: 5 / 6 / 6 / 8;
+    grid-area: 5 / 7 / 6 / 9;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -201,6 +202,6 @@ footer a {
   }
 
   footer {
-    grid-area: 6 / 1 / 7 / 8;
+    grid-area: 6 / 1 / 7 / 9;
   }
 }
