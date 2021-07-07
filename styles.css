@@ -69,7 +69,7 @@ button:focus {
 /* Mobile Styles */
 body {
   display: grid;
-  inline-size: 25rem; /* 375px */
+  inline-size: 27rem; /* 375px */
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 0.5fr repeat(4, 0.75fr) 0.5fr;
   background-color: hsl(257, 40%, 49%);
@@ -119,8 +119,8 @@ p {
 
 button {
   margin: auto;
-  inline-size: 75%;
-  block-size: 2.5rem;
+  inline-size: 65%;
+  block-size: 2.75rem;
   border-radius: 25px;
   text-align: center;
 }
