@@ -171,4 +171,46 @@ footer {
     word-spacing: 1.0625;
     line-height: 1.5;
   }
+
+  #logo {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: left;
+    inline-size: 70%;
+  }
+  
+  #layouts {
+    grid-area: 2 / 1 / 6 / 4;
+    inline-size: 100%;
+    align-self: center;
+  }
+  
+  .landing {
+    grid-area: 3 / 4 / 5 / 8;
+    text-align: center;
+    padding: 0 6.25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+  
+  button {
+    margin: auto;
+    inline-size: 65%;
+    block-size: 2.75rem;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  .icons {
+    grid-area: 5 / 6 / 6 / 8;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer {
+    grid-area: 6 / 1 / 7 / 8;
+  }
 }
