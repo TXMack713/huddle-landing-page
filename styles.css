@@ -76,7 +76,7 @@ body {
   background-image: url('./images/bg-mobile.svg');
   background-size: 100% auto;
   background-repeat: no-repeat;
-background-position: center;
+  background-position: top;
   padding: 5% 10%;
   justify-content: center;
   word-spacing: 1.0625;
