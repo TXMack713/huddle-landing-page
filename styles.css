@@ -123,18 +123,6 @@ footer a {
     align-items: center;
   }
 
-  /* h2 {
-  grid-area: 3 / 1 / 4 / 8;
-  text-align: center;
-  padding: 0 10%;
-}
-
-p {
-  grid-area: 4 / 1 / 5 / 8;
-  text-align: center;
-  padding: 0 15%;
-}*/
-
   button {
     margin: auto;
     inline-size: 65%;
@@ -159,7 +147,7 @@ p {
 @media screen and (min-width: 35rem) {
   body {
     display: grid;
-    inline-size: 25rem; /* 375px */
+    inline-size: 35rem; /* 525px */
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 0.5fr 1fr repeat(3, 0.75fr) 0.5fr;
     background-color: hsl(257, 40%, 49%);
@@ -194,18 +182,6 @@ p {
     justify-content: stretch;
     align-items: center;
   }
-
-  /* h2 {
-  grid-area: 3 / 1 / 4 / 8;
-  text-align: center;
-  padding: 0 10%;
-}
-
-p {
-  grid-area: 4 / 1 / 5 / 8;
-  text-align: center;
-  padding: 0 15%;
-}*/
 
   button {
     margin: auto;
