@@ -66,7 +66,24 @@ button:focus {
   color: white;
 }
 
-/* Mobile Styles */
+footer a {
+  text-decoration: none;
+}
+
+.attribution > a:link,
+.attribution > a:visited {
+  background-color: hsl(360, 69%, 71%);
+  color: white;
+}
+
+.attribution > a:hover,
+.attribution > a:active,
+.attribution > a:focus {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+/* Mobile Layout */
 body {
   display: grid;
   inline-size: 25rem; /* 375px */
@@ -137,19 +154,9 @@ button {
 footer {
   grid-area: 6 / 1 / 7 / 8;
 }
-footer a {
-  text-decoration: none;
-}
 
-.attribution > a:link,
-.attribution > a:visited {
-  background-color: hsl(360, 69%, 71%);
-  color: white;
-}
-
-.attribution > a:hover,
-.attribution > a:active,
-.attribution > a:focus {
-  background-color: hsl(300, 69%, 71%);
-  color: white;
+/* Desktop Layout */
+@media all and (min-width: 33.333em) {
+  body {
+  }
 }
