@@ -179,18 +179,18 @@ footer a {
     text-align: left;
     padding: 0 6.25%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
   }
 
   button {
     margin: auto;
-    max-inline-size: 40%;
+    inline-size: 30%;
     block-size: 2.75rem;
     border-radius: 25px;
     text-align: center;
-    justify-self: flex-start;
+    align-self: start;
   }
 
   .icons {
