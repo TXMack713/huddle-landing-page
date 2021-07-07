@@ -150,7 +150,7 @@ footer a {
     display: grid;
     max-inline-size: 96rem; /* 1440px */
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.5fr 1fr repeat(3, 0.75fr) 0.5fr;
+    grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
     background-size: 100%;
