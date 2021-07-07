@@ -147,7 +147,7 @@ footer a {
 @media screen and (min-width: 35rem) {
   body {
     display: grid;
-    inline-size: 35rem; /* 525px */
+    max-inline-size: 50rem; /* 750px */
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 0.5fr 1fr repeat(3, 0.75fr) 0.5fr;
     background-color: hsl(257, 40%, 49%);
