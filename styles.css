@@ -90,14 +90,76 @@ footer a {
   color: white;
 }
 
+/* Mobile Layout
+Flexbox Version */
+@media screen and (max-width: 50rem) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-inline-size: 100%;
+    max-inline-size: 50rem; /* 750px */
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5% 10%;
+    margin: 0 auto;
+    word-spacing: 1.0625;
+    line-height: 1.5;
+  }
+
+  #logo {
+    align-self: flex-start;
+    inline-size: 40%;
+  }
+
+  #layouts {
+    block-size: 100%;
+    margin: auto 0;
+  }
+
+  .landing {
+    text-align: center;
+    padding: 6.25% 6.25% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  button {
+    margin: auto;
+    inline-size: 65%;
+    block-size: 2.75rem;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .icons {
+    grid-area: 5 / 3 / 6 / 6;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    block-size: 100%;
+  }
+}
+
 /* Mobile Layout */
+/* Grid Version */
+/* 
 @media screen and (max-width: 50rem) {
   body {
     display: grid;
-    max-inline-size: 50rem; /* 750px */
+    max-inline-size: 50rem; 
     grid-template:
       0.5fr
-      1fr
       repeat(3, 0.75fr)
       0.5fr
       / repeat(7, 1fr);
@@ -154,6 +216,7 @@ footer a {
     grid-area: 6 / 1 / 7 / 8;
   }
 }
+*/
 
 /* Desktop Layout */
 @media all and (min-width: 50rem) {
