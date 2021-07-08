@@ -231,7 +231,8 @@ Flexbox Version */
 @media all and (min-width: 50rem) {
   body {
     display: grid;
-    max-inline-size: 96rem; /* 1728px */
+    inline-size: 65%;
+    /* max-inline-size: 96rem; 1728px */
     grid-template:
       0.5fr
       repeat(6, minmax(5%, 1fr))
