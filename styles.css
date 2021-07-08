@@ -215,6 +215,10 @@ footer a {
     padding-right: 20%;
   }
 
+  .icons > a {
+    padding: 0 2.5%;
+  }
+
   footer {
     grid-area: 8 / 1 / 9 / 9;
   }
