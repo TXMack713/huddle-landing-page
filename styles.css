@@ -41,7 +41,7 @@ body {
   -webkit-box-sizing: border-box;
   font-family: 'opensans', sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 h1 {
@@ -51,6 +51,13 @@ h1 {
 h2,
 h3 {
   font-family: 'poppins-regular', sans-serif;
+}
+
+button {
+  border: none;
+  color: hsl(257, 40%, 49%);
+  font-size: 1rem;
+  box-shadow: 2px 3px 10px gray;
 }
 
 button:link,
@@ -193,7 +200,7 @@ footer a {
 
   button {
     /* margin: auto; */
-    inline-size: 30%;
+    inline-size: 40%;
     block-size: 2.75rem;
     border-radius: 25px;
     text-align: center;
