@@ -162,7 +162,7 @@ footer a {
     max-inline-size: 96rem; /* 1440px */
     grid-template:
       0.5fr
-      repeat(6, minmax(10%, 1fr))
+      repeat(6, minmax(5%, 1fr))
       0.5fr
       / repeat(8, 1fr);
     background-color: hsl(257, 40%, 49%);
@@ -189,9 +189,9 @@ footer a {
   }
 
   .landing {
-    grid-area: 4 / 6 / 6 / 9;
+    grid-area: 3 / 6 / 6 / 9;
     text-align: left;
-    padding: 0 6.25%;
+    padding: 5% 6.25%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
