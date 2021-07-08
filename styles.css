@@ -136,7 +136,7 @@ Flexbox Version */
   }
 
   button {
-    margin: 5% 0;
+    margin: 5% 0 10%;
     inline-size: 65%;
     block-size: 2.75rem;
     border-radius: 25px;
