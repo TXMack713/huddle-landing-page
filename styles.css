@@ -88,8 +88,12 @@ footer a {
   body {
     display: grid;
     max-inline-size: 50rem; /* 750px */
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.5fr 1fr repeat(3, 0.75fr) 0.5fr;
+    grid-template:
+      0.5fr
+      1fr
+      repeat(3, 0.75fr)
+      0.5fr
+      / repeat(7, 1fr);
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-mobile.svg');
     background-size: 100%;
@@ -116,7 +120,7 @@ footer a {
   .landing {
     grid-area: 3 / 1 / 5 / 8;
     text-align: center;
-    padding: 0 6.25%;
+    padding: 6.25% 6.25% 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
@@ -149,8 +153,11 @@ footer a {
   body {
     display: grid;
     max-inline-size: 96rem; /* 1440px */
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
+    grid-template:
+      0.5fr
+      repeat(6, minmax(10%, 1fr))
+      0.5fr
+      / repeat(8, 1fr);
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
     background-size: 100%;
@@ -169,23 +176,23 @@ footer a {
   }
 
   #layouts {
-    grid-area: 2 / 1 / 6 / 6;
+    grid-area: 3 / 1 / 7 / 6;
     inline-size: 100%;
     align-self: center;
   }
 
   .landing {
-    grid-area: 2 / 6 / 5 / 9;
+    grid-area: 4 / 6 / 6 / 9;
     text-align: left;
     padding: 0 6.25%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
   }
 
   button {
-    margin: auto;
+    /* margin: auto; */
     inline-size: 30%;
     block-size: 2.75rem;
     border-radius: 25px;
@@ -194,14 +201,14 @@ footer a {
   }
 
   .icons {
-    grid-area: 5 / 7 / 6 / 9;
-    margin: auto;
+    grid-area: 7 / 7 / 8 / 9;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 20%;
   }
 
   footer {
-    grid-area: 6 / 1 / 7 / 9;
+    grid-area: 8 / 1 / 9 / 9;
   }
 }
