@@ -117,7 +117,7 @@ Flexbox Version */
   }
 
   #layouts {
-    block-size: 100%;
+    inline-size: 100%;
     margin: auto 0;
   }
 
