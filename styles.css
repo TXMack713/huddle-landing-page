@@ -239,7 +239,7 @@ Flexbox Version */
       / repeat(8, 1fr);
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
-    background-size: 90%;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: top;
     padding: 5%;
