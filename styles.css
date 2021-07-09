@@ -231,15 +231,22 @@ Flexbox Version */
 @media all and (min-width: 50rem) {
  body {
     display: grid;
-    max-inline-size: 100%;
-    /*max-inline-size: 96rem;  1728px */
-    background-color: hsl(257, 40%, 49%);
-     background: url('./images/bg-desktop.svg') no-repeat center center fixed; 
+    /* max-inline-size: 100%; */
+    max-inline-size: 96rem;  /*1728px*/
+    
+     /* background: url('./images/bg-desktop.svg') no-repeat center center fixed;  */
+     background-color: hsl(257, 40%, 49%);
+     background-image: url('./images/bg-desktop.svg');
+     height: 100%;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     grid-template:
-      0.5fr
-      repeat(6, minmax(5%, 1fr))
-      0.5fr
-      / repeat(8, 1fr);
+      12.5%
+      repeat(7, minmax(5%, 12.5%))
+      12.5%
+      / repeat(10, 10%);
     padding: 5%;
     margin: 0 auto;
     word-spacing: 1.5;
@@ -247,12 +254,12 @@ Flexbox Version */
   }
   
    /* Moved background image information to an html selector from the body selector */
-  html { 
+  /* html { 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
   h2 {
     font-size: 2.6rem;
@@ -265,13 +272,13 @@ Flexbox Version */
   }
 
   #layouts {
-    grid-area: 3 / 1 / 7 / 5;
+    grid-area: 3 / 1 / 9 / 6;
     inline-size: 100%;
     align-self: center;
   }
 
   .landing {
-    grid-area: 3 / 5 / 6 / 9;
+    grid-area: 3 / 6 / 8 / 11;
     text-align: left;
     margin-left: 7.5%;
     padding: 5% 6.25%;
@@ -283,7 +290,7 @@ Flexbox Version */
 
   button {
     /* margin: auto; */
-    inline-size: 40%;
+    inline-size: 35%;
     max-inline-size: 200px;
     block-size: 2.75rem;
     border-radius: 25px;
@@ -292,7 +299,7 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 7 / 7 / 8 / 9;
+    grid-area: 9/ 9 / 10 / 11;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -304,6 +311,6 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 8 / 1 / 9 / 9;
+    grid-area: 10 / 1 / 11 / 9;
   }
 }
