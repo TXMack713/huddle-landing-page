@@ -234,6 +234,7 @@ Flexbox Version */
     max-inline-size: 100%;
     /*max-inline-size: 96rem;  1728px */
     background-color: hsl(257, 40%, 49%);
+     background: url('./images/bg-desktop.svg') no-repeat center center fixed; 
     grid-template:
       0.5fr
       repeat(6, minmax(5%, 1fr))
@@ -247,7 +248,6 @@ Flexbox Version */
   
    /* Moved background image information to an html selector from the body selector */
   html { 
-  background: url('./images/bg-desktop.svg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
