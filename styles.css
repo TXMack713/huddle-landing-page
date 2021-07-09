@@ -242,7 +242,7 @@ Flexbox Version */
     background-image: url('./images/bg-desktop.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     padding: 5%;
     margin: 0 auto;
     word-spacing: 1.5;
