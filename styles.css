@@ -229,6 +229,14 @@ Flexbox Version */
 
 /* Desktop Layout */
 @media all and (min-width: 50rem) {
+  html { 
+    background-color: hsl(257, 40%, 49%);
+  background: url('./images/bg-desktop.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
   body {
     display: grid;
     max-inline-size: 100%;
@@ -238,11 +246,11 @@ Flexbox Version */
       repeat(6, minmax(5%, 1fr))
       0.5fr
       / repeat(8, 1fr);
-    background-color: hsl(257, 40%, 49%);
+    /* background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top;*/
     padding: 5%;
     margin: 0 auto;
     word-spacing: 1.5;
