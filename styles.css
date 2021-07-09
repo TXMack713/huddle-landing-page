@@ -231,8 +231,8 @@ Flexbox Version */
 @media all and (min-width: 50rem) {
   body {
     display: grid;
-    inline-size: 100%;
-    /*max-inline-size: 96rem; 1728px */
+    /* inline-size: 100%; */
+    max-inline-size: 96rem; /* 1728px */
     grid-template:
       0.5fr
       repeat(6, minmax(5%, 1fr))
@@ -242,7 +242,7 @@ Flexbox Version */
     background-image: url('./images/bg-desktop.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top;
     padding: 5%;
     margin: 0 auto;
     word-spacing: 1.5;
