@@ -1,28 +1,28 @@
 @font-face {
-  font-family: 'poppins-regular';
-  src: url('./fonts/poppins-webfont/poppins-regular-webfont.woff')
-      format('woff'),
-    url('./fonts/poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
+  font-family: "poppins-regular";
+  src: url("./fonts/poppins-webfont/poppins-regular-webfont.woff")
+      format("woff"),
+    url("./fonts/poppins-webfont/poppins-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'poppins-semibold';
-  src: url('./fonts/poppins-webfont/poppins-semibold-webfont.woff')
-      format('woff'),
-    url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
-      format('woff2');
+  font-family: "poppins-semibold";
+  src: url("./fonts/poppins-webfont/poppins-semibold-webfont.woff")
+      format("woff"),
+    url("./fonts/poppins-webfont/poppins-semibold-webfont.woff2")
+      format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'opensans';
-  src: url('./fonts/opensans-webfont/opensans-regular-webfont.woff')
-      format('woff'),
-    url('./fonts/opensans-webfont/opensans-regular-webfont.woff2')
-      format('woff2');
+  font-family: "opensans";
+  src: url("./fonts/opensans-webfont/opensans-regular-webfont.woff")
+      format("woff"),
+    url("./fonts/opensans-webfont/opensans-regular-webfont.woff2")
+      format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -39,25 +39,25 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: 'opensans', sans-serif;
+  font-family: "opensans", sans-serif;
   color: white;
   font-size: 18px;
 }
 
 h1 {
-  font-family: 'poppins-semibold', sans-serif;
+  font-family: "poppins-semibold", sans-serif;
 }
 
 h2,
 h3 {
-  font-family: 'poppins-regular', sans-serif;
+  font-family: "poppins-regular", sans-serif;
 }
 
 button {
   border: none;
   color: hsl(257, 40%, 49%);
   font-size: 1rem;
-  box-shadow: 2px 3px 10px gray;
+  box-shadow: 2px 3px 10px rgb(37, 37, 37);
 }
 
 button:link,
@@ -79,15 +79,17 @@ footer a {
 
 .attribution > a:link,
 .attribution > a:visited {
-  background-color: hsl(360, 69%, 71%);
+  /* background-color: hsl(360, 69%, 71%); */
   color: white;
+  border-bottom: 0.2rem solid hsl(300, 69%, 71%);
 }
 
 .attribution > a:hover,
 .attribution > a:active,
 .attribution > a:focus {
-  background-color: hsl(300, 69%, 71%);
+  /* background-color: hsl(300, 69%, 71%); */
   color: white;
+  border-bottom: 0.2rem solid hsl(300, 69%, 71%);
 }
 
 /* Mobile Layout
@@ -101,7 +103,7 @@ Flexbox Version */
     min-inline-size: 100%;
     max-inline-size: 50rem; /* 750px */
     background-color: hsl(257, 40%, 49%);
-    background-image: url('./images/bg-mobile.svg');
+    background-image: url("./images/bg-mobile.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -229,19 +231,18 @@ Flexbox Version */
 
 /* Desktop Layout */
 @media all and (min-width: 50rem) {
- body {
+  html {
+    min-height: 100%;
+  }
+  body {
     display: grid;
-    /* max-inline-size: 100%; */
-    max-inline-size: 96rem;  /*1728px*/
-    
-     /* background: url('./images/bg-desktop.svg') no-repeat center center fixed;  */
-     background-color: hsl(257, 40%, 49%);
-     background-image: url('./images/bg-desktop.svg');
-     height: 100%;
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    min-block-size: 100%;
+    max-inline-size: 100%;
+    /* max-inline-size: 96rem; 1728px */
+
+    background: url("./images/bg-desktop.svg") no-repeat center center fixed;
+    background-color: hsl(257, 40%, 49%);
+    background-size: contain;
     grid-template:
       12.5%
       repeat(7, minmax(5%, 12.5%))
@@ -252,14 +253,6 @@ Flexbox Version */
     word-spacing: 1.5;
     line-height: 1.5;
   }
-  
-   /* Moved background image information to an html selector from the body selector */
-  /* html { 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
 
   h2 {
     font-size: 2.6rem;
@@ -292,7 +285,8 @@ Flexbox Version */
     /* margin: auto; */
     inline-size: 35%;
     max-inline-size: 200px;
-    block-size: 2.75rem;
+    min-block-size: 2.75rem;
+    max-block-size: 2.75rem;
     border-radius: 25px;
     text-align: center;
     align-self: start;
