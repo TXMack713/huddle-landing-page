@@ -199,12 +199,14 @@ Flexbox Version */
     grid-area: 3 / 1 / 10 / 6;
     max-inline-size: 100%;
     align-self: center;
+    margin-top: 15%;
     margin-right: 7.5%;
   }
 
   .landing {
     grid-area: 3 / 6 / 9 / 11;
     text-align: left;
+    margin-top: 15%;
     margin-left: 7.5%;
     padding: 0;
     display: flex;
@@ -281,12 +283,14 @@ Flexbox Version */
     grid-area: 3 / 1 / 10 / 6;
     max-inline-size: 100%;
     align-self: center;
+    margin-top: 15%;
     margin-right: 7.5%;
   }
 
   .landing {
     grid-area: 3 / 6 / 9 / 11;
     text-align: left;
+    margin-top: 15%;
     margin-left: 7.5%;
     padding: 0;
     display: flex;
