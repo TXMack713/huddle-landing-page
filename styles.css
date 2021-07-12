@@ -245,7 +245,7 @@ Flexbox Version */
 }
 
 /* Desktop Layout */
-@media all and (min-width: 58rem) {
+@media all and (min-width: 60rem) {
   html {
     min-height: 100%;
   }
