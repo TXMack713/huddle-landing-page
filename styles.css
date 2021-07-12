@@ -195,7 +195,7 @@ Flexbox Version */
     inline-size: 70%;
   }
 
-  .layouts {
+  #layouts {
     grid-area: 3 / 1 / 10 / 6;
     max-inline-size: 100%;
     align-self: center;
@@ -277,7 +277,7 @@ Flexbox Version */
     inline-size: 70%;
   }
 
-  .layouts {
+  #layouts {
     grid-area: 3 / 1 / 10 / 6;
     max-inline-size: 100%;
     align-self: center;
