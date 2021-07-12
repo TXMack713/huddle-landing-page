@@ -254,7 +254,7 @@ Flexbox Version */
     max-inline-size: 100%;
     background: url("./images/bg-desktop.svg") no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: contain;
+    background-size: cover;
     grid-template:
       12.5%
       repeat(8, minmax(5%, 12.5%))
@@ -291,6 +291,10 @@ Flexbox Version */
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .landing > p {
+    margin-block-start: 0;
   }
 
   button {
