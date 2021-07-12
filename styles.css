@@ -195,7 +195,7 @@ Flexbox Version */
     inline-size: 70%;
   }
 
-   .layouts {
+  .layouts {
     grid-area: 3 / 1 / 10 / 6;
     inline-size: 100%;
     align-self: center;
@@ -211,11 +211,11 @@ Flexbox Version */
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-  } 
+  }
 
   .landing > p {
     margin-block-start: 0;
-  } 
+  }
 
   button {
     inline-size: 35%;
@@ -240,7 +240,7 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 10 / 1 / 11 / 9;
+    grid-area: 11 / 1 / 12 / 9;
   }
 }
 
@@ -293,7 +293,7 @@ Flexbox Version */
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-  } 
+  }
 
   .landing > p {
     margin-block-start: 0;
@@ -322,6 +322,6 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 10 / 1 / 11 / 9;
+    grid-area: 11 / 1 / 12 / 9;
   }
 }
