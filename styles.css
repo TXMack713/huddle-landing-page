@@ -1,28 +1,28 @@
 @font-face {
-  font-family: "poppins-regular";
-  src: url("./fonts/poppins-webfont/poppins-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-regular-webfont.woff2") format("woff2");
+  font-family: 'poppins-regular';
+  src: url('./fonts/poppins-webfont/poppins-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "poppins-semibold";
-  src: url("./fonts/poppins-webfont/poppins-semibold-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-semibold-webfont.woff2")
-      format("woff2");
+  font-family: 'poppins-semibold';
+  src: url('./fonts/poppins-webfont/poppins-semibold-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
+      format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "opensans";
-  src: url("./fonts/opensans-webfont/opensans-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/opensans-webfont/opensans-regular-webfont.woff2")
-      format("woff2");
+  font-family: 'opensans';
+  src: url('./fonts/opensans-webfont/opensans-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/opensans-webfont/opensans-regular-webfont.woff2')
+      format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -39,18 +39,18 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "opensans", sans-serif;
+  font-family: 'opensans', sans-serif;
   color: white;
   font-size: 18px;
 }
 
 h1 {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: 'poppins-semibold', sans-serif;
 }
 
 h2,
 h3 {
-  font-family: "poppins-regular", sans-serif;
+  font-family: 'poppins-regular', sans-serif;
 }
 
 button {
@@ -103,7 +103,7 @@ Flexbox Version */
     min-inline-size: 100%;
     max-inline-size: 50rem; /* 750px */
     background-color: hsl(257, 40%, 49%);
-    background-image: url("./images/bg-mobile.svg");
+    background-image: url('./images/bg-mobile.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -171,7 +171,7 @@ Flexbox Version */
     display: grid;
     min-block-size: 100%;
     min-inline-size: 100%;
-    background: url("./images/bg-desktop.svg") no-repeat center center fixed;
+    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
     grid-template:
@@ -195,7 +195,15 @@ Flexbox Version */
     inline-size: 70%;
   }
 
-  #layouts {
+  .center-stage {
+    grid-area: 3 / 1 / 10 / 6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* #layouts {
     grid-area: 3 / 1 / 10 / 6;
     inline-size: 100%;
     align-self: center;
@@ -210,11 +218,11 @@ Flexbox Version */
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-  }
-  
+  } 
+
   .landing > p {
     margin-block-start: 0;
-  }
+  } */
 
   button {
     inline-size: 35%;
@@ -252,7 +260,7 @@ Flexbox Version */
     display: grid;
     min-block-size: 100%;
     max-inline-size: 100%;
-    background: url("./images/bg-desktop.svg") no-repeat center center fixed;
+    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
     grid-template:
@@ -276,7 +284,15 @@ Flexbox Version */
     inline-size: 70%;
   }
 
-  #layouts {
+  .center-stage {
+    grid-area: 3 / 1 / 10 / 6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* #layouts {
     grid-area: 3 / 1 / 10 / 6;
     inline-size: 100%;
     align-self: center;
@@ -286,16 +302,16 @@ Flexbox Version */
     grid-area: 3 / 6 / 9 / 11;
     text-align: left;
     margin-left: 7.5%;
-    padding: 5% 6.25%;
+    padding: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-  }
+  } 
 
   .landing > p {
     margin-block-start: 0;
-  }
+  } */
 
   button {
     inline-size: 35%;
