@@ -1,28 +1,28 @@
 @font-face {
-  font-family: "poppins-regular";
-  src: url("./fonts/poppins-webfont/poppins-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-regular-webfont.woff2") format("woff2");
+  font-family: 'poppins-regular';
+  src: url('./fonts/poppins-webfont/poppins-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "poppins-semibold";
-  src: url("./fonts/poppins-webfont/poppins-semibold-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-semibold-webfont.woff2")
-      format("woff2");
+  font-family: 'poppins-semibold';
+  src: url('./fonts/poppins-webfont/poppins-semibold-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
+      format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "opensans";
-  src: url("./fonts/opensans-webfont/opensans-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/opensans-webfont/opensans-regular-webfont.woff2")
-      format("woff2");
+  font-family: 'opensans';
+  src: url('./fonts/opensans-webfont/opensans-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/opensans-webfont/opensans-regular-webfont.woff2')
+      format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -39,18 +39,18 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "opensans", sans-serif;
+  font-family: 'opensans', sans-serif;
   color: white;
   font-size: 18px;
 }
 
 h1 {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: 'poppins-semibold', sans-serif;
 }
 
 h2,
 h3 {
-  font-family: "poppins-regular", sans-serif;
+  font-family: 'poppins-regular', sans-serif;
 }
 
 button {
@@ -94,7 +94,7 @@ footer a {
 
 /* Mobile Layout
 Flexbox Version */
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 44rem) {
   body {
     display: flex;
     flex-flow: column nowrap;
@@ -103,7 +103,7 @@ Flexbox Version */
     min-inline-size: 100%;
     max-inline-size: 50rem; /* 750px */
     background-color: hsl(257, 40%, 49%);
-    background-image: url("./images/bg-mobile.svg");
+    background-image: url('./images/bg-mobile.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -119,7 +119,7 @@ Flexbox Version */
     inline-size: 40%;
   }
 
-  #layouts {
+  .layouts {
     inline-size: 100%;
     margin: 12.5% 0 0;
   }
@@ -162,75 +162,92 @@ Flexbox Version */
   }
 }
 
-/* Mobile Layout */
-/* Grid Version */
-/* 
-@media screen and (max-width: 50rem) {
+/* Desktop Layout */
+@media all and (min-width: 44rem) {
+  html {
+    min-height: 100%;
+  }
   body {
     display: grid;
-    max-inline-size: 50rem; 
-    grid-template:
-      0.5fr
-      repeat(3, 0.75fr)
-      0.5fr
-      / repeat(7, 1fr);
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-image: url('./images/bg-mobile.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    padding: 5% 10%;
+    background-size: cover;
+    grid-template:
+      12.5%
+      repeat(8, minmax(5%, 12.5%))
+      12.5%
+      / repeat(10, 10%);
+    padding: 5%;
     margin: 0 auto;
-    word-spacing: 1.0625;
+    word-spacing: 1.5;
     line-height: 1.5;
   }
 
+  h2 {
+    font-size: 1.8rem;
+  }
+
   #logo {
-    grid-area: 1 / 1 / 2 / 8;
+    grid-area: 1 / 1 / 2 / 3;
     justify-self: left;
-    inline-size: 40%;
+    inline-size: 70%;
   }
 
   #layouts {
-    grid-area: 2 / 1 / 3 / 8;
-    inline-size: 100%;
+    grid-area: 3 / 1 / 10 / 6;
+    max-inline-size: 100%;
     align-self: center;
+    margin-top: 15%;
+    margin-right: 7.5%;
   }
 
   .landing {
-    grid-area: 3 / 1 / 5 / 8;
-    text-align: center;
-    padding: 6.25% 6.25% 0;
+    grid-area: 3 / 6 / 9 / 11;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 7.5%;
+    padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: stretch;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .landing > p {
+    margin-block-start: 0;
   }
 
   button {
-    margin: auto;
-    inline-size: 65%;
-    block-size: 2.75rem;
+    inline-size: 35%;
+    max-inline-size: 200px;
+    min-block-size: 2.75rem;
+    max-block-size: 2.75rem;
     border-radius: 25px;
     text-align: center;
+    align-self: start;
   }
 
   .icons {
-    grid-area: 5 / 3 / 6 / 6;
-    margin: auto;
+    grid-area: 9 / 9 / 10 / 11;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 20%;
+  }
+
+  .icons > a {
+    padding: 0 2.5%;
   }
 
   footer {
-    grid-area: 6 / 1 / 7 / 8;
+    grid-area: 11 / 1 / 12 / 9;
   }
 }
-*/
 
 /* Desktop Layout */
-@media all and (min-width: 50rem) {
+@media all and (min-width: 60rem) {
   html {
     min-height: 100%;
   }
@@ -238,13 +255,17 @@ Flexbox Version */
     display: grid;
     min-block-size: 100%;
     max-inline-size: 100%;
+<<<<<<< HEAD
     /* max-inline-size: 96rem; 1728px */
     background: url("./images/bg-desktop.svg") no-repeat center center fixed;
+=======
+    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
+>>>>>>> 1eb90d7280c0b8c2c63b558a2a48f0c91361c483
     background-color: hsl(257, 40%, 49%);
-    background-size: contain;
+    background-size: cover;
     grid-template:
       12.5%
-      repeat(7, minmax(5%, 12.5%))
+      repeat(8, minmax(5%, 12.5%))
       12.5%
       / repeat(10, 10%);
     padding: 5%;
@@ -264,24 +285,30 @@ Flexbox Version */
   }
 
   #layouts {
-    grid-area: 3 / 1 / 9 / 6;
-    inline-size: 100%;
+    grid-area: 3 / 1 / 10 / 6;
+    max-inline-size: 100%;
     align-self: center;
+    margin-top: 15%;
+    margin-right: 7.5%;
   }
 
   .landing {
-    grid-area: 3 / 6 / 8 / 11;
+    grid-area: 3 / 6 / 9 / 11;
     text-align: left;
+    margin-top: 15%;
     margin-left: 7.5%;
-    padding: 5% 6.25%;
+    padding: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
   }
 
+  .landing > p {
+    margin-block-start: 0;
+  }
+
   button {
-    /* margin: auto; */
     inline-size: 35%;
     max-inline-size: 200px;
     min-block-size: 2.75rem;
@@ -292,7 +319,7 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 9/ 9 / 10 / 11;
+    grid-area: 9 / 9 / 10 / 11;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -304,6 +331,6 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 10 / 1 / 11 / 9;
+    grid-area: 11 / 1 / 12 / 9;
   }
 }
