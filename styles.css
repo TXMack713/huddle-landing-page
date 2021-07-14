@@ -178,12 +178,10 @@ Flexbox Version */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
-    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
+    grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
-    word-spacing: 1.5;
-    line-height: 1.5;
   }
 
   h2 {
@@ -204,12 +202,12 @@ Flexbox Version */
   }
 
   .landing {
-    grid-area: 4 / 7 / 8 / 11;
+    grid-area: 3 / 7 / 7 / 11;
     text-align: left;
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: stretch;
+    align-self: center;
     align-items: space-evenly;
     padding: 0 auto;
   }
@@ -233,7 +231,7 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 10 / 9 / 11 / 11;
+    grid-area: 9 / 9 / 10 / 11;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -245,7 +243,7 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 11 / 1 / 12 / 11;
+    grid-area: 10 / 1 / 11 / 11;
     align-self: center;
   }
 }
@@ -259,12 +257,10 @@ Flexbox Version */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
-    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
+    grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
-    word-spacing: 1.5;
-    line-height: 1.5;
   }
 
   h2 {
@@ -285,12 +281,12 @@ Flexbox Version */
   }
 
   .landing {
-    grid-area: 4 / 7 / 8 / 11;
+    grid-area: 3 / 7 / 7 / 11;
     text-align: left;
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: stretch;
+    align-self: center;
     align-items: space-evenly;
     padding: 0 auto;
   }
@@ -314,7 +310,7 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 10 / 9 / 11 / 11;
+    grid-area: 9 / 9 / 10 / 11;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -326,7 +322,7 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 11 / 1 / 12 / 11;
+    grid-area: 10 / 1 / 11 / 11;
     align-self: center;
   }
 }
