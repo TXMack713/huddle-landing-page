@@ -177,7 +177,7 @@ Flexbox Version */
     min-block-size: 100%;
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
+    background-size: contain;
     grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
@@ -193,7 +193,7 @@ Flexbox Version */
   #logo {
     grid-area: 1 / 1 / 2 / 3;
     justify-self: left;
-    inline-size: 100%;
+    inline-size: 90%;
   }
 
   #layouts {
@@ -212,10 +212,6 @@ Flexbox Version */
     align-self: stretch;
     align-items: space-evenly;
     padding: 0 auto;
-    /* display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start; */
   }
 
   .landing > h2 {
@@ -262,7 +258,7 @@ Flexbox Version */
     /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
+    background-size: contain;
     grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
@@ -272,13 +268,13 @@ Flexbox Version */
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   #logo {
     grid-area: 1 / 1 / 2 / 3;
     justify-self: left;
-    inline-size: 100%;
+    inline-size: 90%;
   }
 
   #layouts {
@@ -297,10 +293,6 @@ Flexbox Version */
     align-self: stretch;
     align-items: space-evenly;
     padding: 0 auto;
-    /* display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start; */
   }
 
   .landing > h2 {
