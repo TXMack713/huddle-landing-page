@@ -47,6 +47,7 @@ body {
   font-family: 'opensans', sans-serif;
   color: white;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 h1 {
@@ -114,8 +115,6 @@ Flexbox Version */
     background-position: top;
     padding: 5% 10%;
     margin: 0 auto;
-    word-spacing: 1.0625;
-    line-height: 1.5;
   }
 
   #logo {
@@ -209,7 +208,6 @@ Flexbox Version */
     justify-self: center;
     align-self: center;
     align-items: space-evenly;
-    padding: 0 auto;
   }
 
   .landing > h2 {
@@ -218,6 +216,7 @@ Flexbox Version */
 
   .landing > p {
     margin-block-start: 0;
+    word-spacing: 0.25rem;
   }
 
   button {
@@ -288,7 +287,6 @@ Flexbox Version */
     justify-self: center;
     align-self: center;
     align-items: space-evenly;
-    padding: 0 auto;
   }
 
   .landing > h2 {
@@ -297,6 +295,7 @@ Flexbox Version */
 
   .landing > p {
     margin-block-start: 0;
+    word-spacing: 0.25rem;
   }
 
   button {
