@@ -194,11 +194,11 @@ Flexbox Version */
 
   #layouts {
     grid-area: 3 / 1 / 9 / 7;
-    max-inline-size: 100%;
-    justify-self: stretch;
+    min-inline-size: 100%;
+    /* justify-self: center; */
     align-self: stretch;
-    margin-top: 15%;
-    margin-right: 7.5%;
+    /* margin-top: 15%;
+    margin-right: 7.5%; */
   }
 
   .landing {
@@ -280,11 +280,11 @@ Flexbox Version */
 
   #layouts {
     grid-area: 3 / 1 / 9 / 7;
-    max-inline-size: 100%;
-    justify-self: stretch;
+    min-inline-size: 100%;
+    /* justify-self: center; */
     align-self: stretch;
-    margin-top: 15%;
-    margin-right: 7.5%;
+    /* margin-top: 15%;
+    margin-right: 7.5%; */
   }
 
   .landing {
