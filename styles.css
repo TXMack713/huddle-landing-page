@@ -207,7 +207,7 @@ Flexbox Version */
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
     align-items: space-evenly;
     padding: 0 auto;
     /* display: flex;
@@ -294,7 +294,7 @@ Flexbox Version */
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
     align-items: space-evenly;
     padding: 0 auto;
     /* display: flex;
