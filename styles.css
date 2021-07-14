@@ -247,6 +247,7 @@ Flexbox Version */
 
   footer {
     grid-area: 11 / 1 / 12 / 11;
+    align-self: center;
   }
 }
 
@@ -332,5 +333,6 @@ Flexbox Version */
 
   footer {
     grid-area: 11 / 1 / 12 / 11;
+    align-self: center;
   }
 }
