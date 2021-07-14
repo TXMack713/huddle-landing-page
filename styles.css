@@ -169,15 +169,27 @@ Flexbox Version */
   }
 }
 
-/* Desktop Layout */
+/* Smaller Desktop Layout */
 @media all and (min-width: 44rem) {
   body {
     display: grid;
     min-block-size: 100%;
+    /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
+    grid-template-areas:
+      'header header ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... icons icons'
+      'footer footer footer footer footer footer footer footer footer footer';
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -188,26 +200,28 @@ Flexbox Version */
   }
 
   #logo {
-    grid-area: 1 / 1 / 2 / 3;
+    /*     grid-area: 1 / 1 / 2 / 3; */
+    grid-area: header;
     justify-self: left;
     inline-size: 90%;
   }
 
   #layouts {
-    grid-area: 3 / 1 / 9 / 7;
+    /*     grid-area: 3 / 1 / 9 / 7; */
+    grid-area: layouts;
     inline-size: 100%;
     justify-self: center;
     align-self: center;
   }
 
   .landing {
-    grid-area: 3 / 7 / 7 / 11;
+    /*     grid-area: 3 / 7 / 7 / 11; */
+    grid-area: landing;
     text-align: left;
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: center;
-    align-items: space-evenly;
+    align-self: end;
   }
 
   .landing > h2 {
@@ -230,7 +244,8 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 9 / 9 / 10 / 11;
+    /*     grid-area: 9 / 9 / 10 / 11; */
+    grid-area: icons;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -242,12 +257,13 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 10 / 1 / 11 / 11;
+    /*     grid-area: 10 / 1 / 11 / 11; */
+    grid-area: footer;
     align-self: center;
   }
 }
 
-/* Desktop Layout */
+/* Larger Desktop Layout */
 @media all and (min-width: 60rem) {
   body {
     display: grid;
@@ -257,6 +273,17 @@ Flexbox Version */
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
+    grid-template-areas:
+      'header header ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... icons icons'
+      'footer footer footer footer footer footer footer footer footer footer';
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -267,26 +294,28 @@ Flexbox Version */
   }
 
   #logo {
-    grid-area: 1 / 1 / 2 / 3;
+    /*     grid-area: 1 / 1 / 2 / 3; */
+    grid-area: header;
     justify-self: left;
     inline-size: 90%;
   }
 
   #layouts {
-    grid-area: 3 / 1 / 9 / 7;
+    /*     grid-area: 3 / 1 / 9 / 7; */
+    grid-area: layouts;
     inline-size: 100%;
     justify-self: center;
     align-self: center;
   }
 
   .landing {
-    grid-area: 3 / 7 / 7 / 11;
+    /*     grid-area: 3 / 7 / 7 / 11; */
+    grid-area: landing;
     text-align: left;
     margin: 0 7.5%;
     justify-content: start;
     justify-self: center;
-    align-self: center;
-    align-items: space-evenly;
+    align-self: end;
   }
 
   .landing > h2 {
@@ -309,7 +338,8 @@ Flexbox Version */
   }
 
   .icons {
-    grid-area: 9 / 9 / 10 / 11;
+    /*     grid-area: 9 / 9 / 10 / 11; */
+    grid-area: icons;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -321,7 +351,8 @@ Flexbox Version */
   }
 
   footer {
-    grid-area: 10 / 1 / 11 / 11;
+    /*     grid-area: 10 / 1 / 11 / 11; */
+    grid-area: footer;
     align-self: center;
   }
 }
