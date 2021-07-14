@@ -183,7 +183,7 @@ Flexbox Version */
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   #logo {
@@ -208,6 +208,7 @@ Flexbox Version */
     justify-content: start;
     justify-self: center;
     align-self: center;
+    align-items: space-evenly;
     padding: 0 auto;
     /* display: flex;
     flex-flow: column nowrap;
@@ -294,6 +295,7 @@ Flexbox Version */
     justify-content: start;
     justify-self: center;
     align-self: center;
+    align-items: space-evenly;
     padding: 0 auto;
     /* display: flex;
     flex-flow: column nowrap;
