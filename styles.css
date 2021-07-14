@@ -104,7 +104,8 @@ Flexbox Version */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    justify-self: stretch;
+    align-content: center;
     max-inline-size: 50rem; /* 750px */
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-mobile.svg');
@@ -124,12 +125,15 @@ Flexbox Version */
   }
 
   .layouts {
-    inline-size: 100%;
+    max-inline-size: 100%;
+    flex: 1 1 auto;
     margin: 12.5% 0 0;
   }
 
   .landing {
     margin: 12.5% 0 0;
+    max-inline-size: 100%;
+    flex: 1 1 auto;
     text-align: center;
     display: flex;
     flex-flow: column wrap;
@@ -174,7 +178,7 @@ Flexbox Version */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
-    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 162px));
+    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -195,10 +199,7 @@ Flexbox Version */
   #layouts {
     grid-area: 3 / 1 / 9 / 7;
     max-inline-size: 100%;
-    /* justify-self: center; */
-    align-self: stretch;
-    /* margin-top: 15%;
-    margin-right: 7.5%; */
+    justify-self: center;
   }
 
   .landing {
@@ -261,7 +262,7 @@ Flexbox Version */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
-    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 162px));
+    grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -282,10 +283,7 @@ Flexbox Version */
   #layouts {
     grid-area: 3 / 1 / 9 / 7;
     max-inline-size: 100%;
-    /* justify-self: center; */
-    align-self: stretch;
-    /* margin-top: 15%;
-    margin-right: 7.5%; */
+    justify-self: center;
   }
 
   .landing {
