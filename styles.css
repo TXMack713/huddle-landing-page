@@ -177,7 +177,7 @@ Flexbox Version */
     min-block-size: 100%;
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: contain;
+    background-size: cover;
     grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
@@ -258,7 +258,7 @@ Flexbox Version */
     /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: contain;
+    background-size: cover;
     grid: repeat(11, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     justify-content: center;
     padding: 5%;
