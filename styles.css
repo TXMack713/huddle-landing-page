@@ -271,7 +271,7 @@ Flexbox Version */
     /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
+    background-size: 80rem;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
       'header header ...... ...... ...... ...... ...... ...... ...... ......'
