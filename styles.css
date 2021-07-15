@@ -174,7 +174,6 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: cover;
@@ -229,7 +228,7 @@ Flexbox Version */
   }
 
   .landing > p {
-    margin-block-start: 0;
+    margin-top: 0;
     word-spacing: 0.25rem;
   }
 
@@ -268,7 +267,6 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    /* max-inline-size: 90rem; */
     background: url('./images/bg-desktop.svg') no-repeat center center fixed;
     background-color: hsl(257, 40%, 49%);
     background-size: 80rem;
@@ -323,7 +321,7 @@ Flexbox Version */
   }
 
   .landing > p {
-    margin-block-start: 0;
+    margin-top: 0;
     word-spacing: 0.25rem;
   }
 
