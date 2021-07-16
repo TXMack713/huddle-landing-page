@@ -1,92 +1,143 @@
-# Frontend Mentor - Huddle landing page with single introductory section
+# Frontend Mentor - Huddle landing page with single introductory section solution
 
-![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
+This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
+Users should be able to:
 
-Your challenge is to build out this landing page from the designs provided in the starter code.
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Screenshot
 
-Your users should be able to: 
+images/Frontend Mentor - Huddle landing page screenshot.png![img.png](img.png)
 
-- View the optimal layout for the page depending on their device's screen size
-- See hover states for all interactive elements on the page
+### Links
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+- Solution URL: [GitHub/TXMack713](https://github.com/TXMack713/huddle-landing-page)
+- Live Site URL: [GitHub Pages] (https://txmack713.github.io/huddle-landing-page/)
 
-## Where to find everything
+## My process
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+I started with the mobile layout first and then after I was satisfied with the mobile layout, I proceeded to create the desktop layout. After observing how disproportionate the size of the `.landing` and `#layouts` sections were, I created a second desktop layout for smaller screens that incorporated a smaller heading size for better proportions between the `#layouts` image and the `.landing` paragraph.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+I checked other learners' code on frontendmentor.io to see how they were solving the issue of sizing and positioning the desktop background image to better match the desktop's design preview. I began by working on adjusting only the size of the background using the various keywords and then began working on moving the `#layouts` and `.landing` sections up and down within the grid, but after researching background positioning articles on css-tricks and W3Schools, I changed the background's psotionining from `center` `center` to `bottom` `center` and the size from `cover` to `auto`.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Finally, I changed the mobile layout's `icon` positioning from flexbox to grid for greater control over the spacing.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Grid
+- Mobile-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+I learned how to use the background shorthand to set the background's color, add an image, position the image, set 
+it to not repeat and to cause the image to be fixed in place.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+By experimenting with placing the grid items using the line numbers and using grid areas, I learned that grid areas 
+gave me better control over the positioning when using justify-content.
 
-## Deploying your project
+By testing the layout on my personal machine as well as my workstation, I noticed how differently the page will 
+render even when using the same browser at the same zoom level.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Using margins on the anchor elements in the icon section allowed me to space out the social media icons to the 
+degree I wanted.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I initially tried using the recommended sources for the social media icons, but noticed that whether I downloaded 
+them as `svg` files or `png` files, the icons would not render on the page. I eventually decided on linking directly 
+to the source page for free each icon I wanted to use as this method was successful in getting the icons to render 
+on the page.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```css
+body {
+  display: grid;
+  min-block-size: 100%;
+  background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat fixed top center;
+  background-size: cover;
+  grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
+  grid-template-areas:
+      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
+      "header header ...... ...... ...... ...... ...... ...... ...... ......"
+      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
+      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
+      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
+      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
+      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
+      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
+      "...... ...... ...... ...... ...... ...... ...... ...... icons icons"
+      "footer footer footer footer footer footer footer footer footer footer";
+  justify-content: center;
+  padding: 5%;
+  margin: 0 auto;
+}
 
-## Create a custom `README.md`
+#layouts {
+  /*     grid-area: 3 / 1 / 9 / 7; */
+  grid-area: layouts;
+  inline-size: 100%;
+  justify-self: center;
+  align-self: center;
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+.landing {
+  /*         grid-area: 3 / 7 / 7 / 11; */
+  grid-area: landing;
+  text-align: left;
+  margin: 7.5% 7.5% 0 7.5%;
+  justify-content: start;
+  justify-self: center;
+  align-self: start;
+}
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+.icons {
+  /*     grid-area: 9 / 9 / 10 / 11; */
+  grid-area: icons;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20%;
+}
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+.icons > a {
+  padding: 0 3.75%;
+}
+```
 
-## Submitting your solution
+### Continued development
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- I'm continuing to learn CSS layout, particularly CSS Grid as I find that I have greater control over and confidence in the placement of items in my layouts.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Useful resources
+- The MDN Web Docs (https://developer.mozilla.org/en-US/) and W3Schools (http://w3schools.com) has proved to be 
+  invaluable for 
+  quick 
+  lookups 
+  regarding the 
+  different values for certain properties and seeing them in action before implementing them.
 
-## Sharing your solution
+## Author
 
-There are multiple places you can share your solution:
+- Website - [Anthony Mack](https://github.com/TXMack713/)
+- Frontend Mentor - [@TXMack713](https://www.frontendmentor.io/profile/txmack713)
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+### Acknowledgements
