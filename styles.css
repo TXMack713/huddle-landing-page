@@ -174,9 +174,9 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
+    background: url('./images/bg-desktop.svg') no-repeat bottom center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
+    background-size: auto;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
       'header header ...... ...... ...... ...... ...... ...... ...... ......'
@@ -267,13 +267,13 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
+    background: url('./images/bg-desktop.svg') no-repeat bottom center fixed;
     background-color: hsl(257, 40%, 49%);
-    background-size: 80rem;
+    background-size: auto;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
-      'header header ...... ...... ...... ...... ...... ...... ...... ......'
       '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      'header header ...... ...... ...... ...... ...... ...... ...... ......'
       'layouts layouts layouts layouts layouts layouts landing landing landing landing'
       'layouts layouts layouts layouts layouts layouts landing landing landing landing'
       'layouts layouts layouts layouts layouts layouts landing landing landing landing'
@@ -307,7 +307,7 @@ Flexbox Version */
   }
 
   .landing {
-    /*     grid-area: 3 / 7 / 7 / 11; */
+/*         grid-area: 3 / 7 / 7 / 11; */
     grid-area: landing;
     text-align: left;
     margin: 7.5% 7.5% 0 7.5%;
