@@ -175,8 +175,8 @@ Flexbox Version */
     background-size: cover;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
-      "header header ...... ...... ...... ...... ...... ...... ...... ......"
       "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
+      "header header ...... ...... ...... ...... ...... ...... ...... ......"
       "layouts layouts layouts layouts layouts layouts landing landing landing landing"
       "layouts layouts layouts layouts layouts layouts landing landing landing landing"
       "layouts layouts layouts layouts layouts layouts landing landing landing landing"
