@@ -156,12 +156,12 @@ Flexbox Version */
   .icons {
     margin: 7.5% 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
 
   .icons > a {
-    padding: 0 7.5%;
+    padding: 0 2.5%;
   }
 
   footer {
