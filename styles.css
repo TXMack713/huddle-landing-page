@@ -1,28 +1,28 @@
 @font-face {
-  font-family: "poppins-regular";
-  src: url("./fonts/poppins-webfont/poppins-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-regular-webfont.woff2") format("woff2");
+  font-family: 'poppins-regular';
+  src: url('./fonts/poppins-webfont/poppins-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "poppins-semibold";
-  src: url("./fonts/poppins-webfont/poppins-semibold-webfont.woff")
-      format("woff"),
-    url("./fonts/poppins-webfont/poppins-semibold-webfont.woff2")
-      format("woff2");
+  font-family: 'poppins-semibold';
+  src: url('./fonts/poppins-webfont/poppins-semibold-webfont.woff')
+      format('woff'),
+    url('./fonts/poppins-webfont/poppins-semibold-webfont.woff2')
+      format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "opensans";
-  src: url("./fonts/opensans-webfont/opensans-regular-webfont.woff")
-      format("woff"),
-    url("./fonts/opensans-webfont/opensans-regular-webfont.woff2")
-      format("woff2");
+  font-family: 'opensans';
+  src: url('./fonts/opensans-webfont/opensans-regular-webfont.woff')
+      format('woff'),
+    url('./fonts/opensans-webfont/opensans-regular-webfont.woff2')
+      format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -44,19 +44,19 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "opensans", sans-serif;
+  font-family: 'opensans', sans-serif;
   color: white;
   font-size: 18px;
   line-height: 1.5;
 }
 
 h1 {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: 'poppins-semibold', sans-serif;
 }
 
 h2,
 h3 {
-  font-family: "poppins-regular", sans-serif;
+  font-family: 'poppins-regular', sans-serif;
 }
 
 button {
@@ -108,7 +108,8 @@ Flexbox Version */
     justify-self: stretch;
     align-content: center;
     max-inline-size: 50rem; /* 750px */
-    background: hsl(257, 40%, 49%) url("./images/bg-mobile.svg") no-repeat fixed top center;
+    background: hsl(257, 40%, 49%) url('./images/bg-mobile.svg') no-repeat fixed
+      top center;
     background-size: 100%;
     padding: 5% 10%;
     margin: 0 auto;
@@ -171,20 +172,21 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat fixed top center;
+    background: hsl(257, 40%, 49%) url('./images/bg-desktop.svg') no-repeat
+      fixed center center;
     background-size: cover;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
-      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
-      "header header ...... ...... ...... ...... ...... ...... ...... ......"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
-      "...... ...... ...... ...... ...... ...... ...... ...... icons icons"
-      "footer footer footer footer footer footer footer footer footer footer";
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      'header header ...... ...... ...... ...... ...... ...... ...... ......'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... icons icons'
+      'footer footer footer footer footer footer footer footer footer footer';
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -263,20 +265,21 @@ Flexbox Version */
   body {
     display: grid;
     min-block-size: 100%;
-    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat fixed top center;
+    background: hsl(257, 40%, 49%) url('./images/bg-desktop.svg') no-repeat
+      fixed center center;
     background-size: cover;
     grid: repeat(10, minmax(8.33%, 1fr)) / repeat(10, minmax(auto, 144px));
     grid-template-areas:
-      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
-      "header header ...... ...... ...... ...... ...... ...... ...... ......"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "layouts layouts layouts layouts layouts layouts landing landing landing landing"
-      "...... ...... ...... ...... ...... ...... ...... ...... ...... ......"
-      "...... ...... ...... ...... ...... ...... ...... ...... icons icons"
-      "footer footer footer footer footer footer footer footer footer footer";
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      'header header ...... ...... ...... ...... ...... ...... ...... ......'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      'layouts layouts layouts layouts layouts layouts landing landing landing landing'
+      '...... ...... ...... ...... ...... ...... ...... ...... ...... ......'
+      '...... ...... ...... ...... ...... ...... ...... ...... icons icons'
+      'footer footer footer footer footer footer footer footer footer footer';
     justify-content: center;
     padding: 5%;
     margin: 0 auto;
@@ -302,7 +305,7 @@ Flexbox Version */
   }
 
   .landing {
-/*         grid-area: 3 / 7 / 7 / 11; */
+    /*         grid-area: 3 / 7 / 7 / 11; */
     grid-area: landing;
     text-align: left;
     margin: 7.5% 7.5% 0 7.5%;
